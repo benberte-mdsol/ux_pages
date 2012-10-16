@@ -684,3 +684,10 @@ ul.presentation-nav li{
   margin-top: 8px;
 }
 
+.b-header {
+  height: 32px;
+  background-color: #ddd;
+  color: #333;
+  padding: 8px 14px 8px 8px;
+  margin: 0;
+}
