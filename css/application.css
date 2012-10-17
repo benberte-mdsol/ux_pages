@@ -1,4 +1,5 @@
 /* global styles */
+
 a{
   color: #666;
   text-decoration: underline;
@@ -320,8 +321,8 @@ table {
 }
 
 thead {
-	background:#777;
-	color: #fff;
+	background:#ccc;
+	color: #333;
 }
 
 
@@ -672,4 +673,21 @@ ul.presentation-nav li{
   display: inline;
   list-style-type: none;
   margin-right: 8px;
+}
+[class*="span"] {
+    float: left;
+    margin-left: 0;
+
+}
+
+.span6 button {
+  margin-top: 8px;
+}
+
+.b-header {
+  height: 32px;
+  background-color: #ddd;
+  color: #333;
+  padding: 8px 14px 8px 8px;
+  margin: 0;
 }
