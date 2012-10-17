@@ -686,8 +686,38 @@ ul.presentation-nav li{
 
 .b-header {
   height: 32px;
-  background-color: #ddd;
-  color: #333;
-  padding: 8px 14px 8px 8px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 10px 8px 12px;
   margin: 0;
+  text-shadow: none;
+}
+
+/* Tabs */
+
+#myTab.nav {
+  margin-bottom: -1px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    margin-right: 2px;
+    float: left;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ddd;
+    border-color: #DDDDDD;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: default;
+    border-radius: 4px;
 }
