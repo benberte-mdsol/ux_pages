@@ -321,16 +321,19 @@ table {
 }
 
 thead {
-	background:#ccc;
-	color: #333;
+	background:#999;
+	color: #fff;
+  border: 1px solid #999;
 }
-
+.table th, .table td {
+    border-top: none;
+}
 
 .table-striped tbody tr:nth-child(odd) td , .table-striped tbody tr:nth-child(odd) th {
 background-color: #fff;
 }
 .table-striped tbody tr:nth-child(even) td , .table-striped tbody tr:nth-child(even) th {
-background-color: #F9F9F9;
+background-color: #F4F4F4;
 }
 .table-bordered {
   border: 1px solid #dddddd;
@@ -512,11 +515,11 @@ tfoot {
 
 footer {
   height: 60px;
-  margin: 0 auto;
+  margin: 16px auto 0;
   font-size: 80%;
 }
 .footer-wrapper{
-  margin: 0 auto;
+  margin: 16px auto 0;
   width: 500px;
 }
 
@@ -660,6 +663,9 @@ margin: 0px 4px;
   margin-right: 4px;
 }
 
+section .table {
+  margin-bottom: 8px;
+}
 
 
 
@@ -680,9 +686,7 @@ ul.presentation-nav li{
 
 }
 
-.span6 button {
-  margin-top: 8px;
-}
+
 
 .b-header {
   height: 32px;
@@ -706,6 +710,7 @@ ul.presentation-nav li{
 }
 
 .nav-tabs > li, .nav-pills > li {
+    margin-left: 8px;
     margin-right: 2px;
     float: left;
     -moz-border-bottom-colors: none;
@@ -720,4 +725,7 @@ ul.presentation-nav li{
     color: #555555;
     cursor: default;
     border-radius: 4px;
+}
+.nav-tabs > li > a, .nav-pills > li > a {
+    margin-right: 0;
 }
