@@ -23,6 +23,9 @@ h2 {
   margin-bottom: 8px;
   line-height: 30px;
 }
+h4.underline {
+  border-bottom: 1px solid #333;
+}
 
 .container {
   margin-top: 16px;
@@ -624,6 +627,10 @@ line-height: 18px;
 margin: 0px 4px;
 }
 
+.input-mini {
+  width: 20px;
+}
+
 /* Modal */
 
 .modal-footer {
@@ -702,6 +709,13 @@ ul.presentation-nav li{
   padding: 0 10px 8px 12px;
   margin: 0;
   text-shadow: none;
+}
+
+.action-row{
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
 }
 
 /* Tabs */
