@@ -23,9 +23,7 @@ h2 {
   margin-bottom: 8px;
   line-height: 30px;
 }
-h4.underline {
-  border-bottom: 1px solid #333;
-}
+
 
 .container {
   margin-top: 16px;
@@ -711,10 +709,16 @@ ul.presentation-nav li{
   text-shadow: none;
 }
 
+.b-header .btn-toolbar{
+  margin-top: 8px;
+}
+
 .action-row{
   text-align: center;
   padding: 8px;
-  border: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   margin-bottom: 16px;
 }
 
