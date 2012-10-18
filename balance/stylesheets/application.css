@@ -1,12 +1,6 @@
 /* global styles */
-
-a{
+a {
   color: #666;
-  text-decoration: underline;
-}
-
-a:hover{
-	color: #333;
 }
 .input {
   margin: 0 8px;
@@ -29,6 +23,11 @@ h2 {
   margin-top: 16px;
 }
 
+.required {
+  color: #B94A48;
+  font-size: 120%;
+}
+
 /* header */
 header {
 	height:64px;
@@ -41,21 +40,32 @@ img.logo{
   margin: 8px;
 }
 
-ul.account-nav {
-  margin: 16px 0;
+#user-area {
+  float: right;
+  margin: 0 16px 0 0;
+  text-align: right;
 }
 
-ul.account-nav li {
-  display: inline;
-  margin: 11px 4px 0 4px;
-  list-style-type: none;
-  font-size: 90%;
+#top_rung {
+  padding-top: 12px;
+  vertical-align: top;
 }
-
-ul.account-nav li .btn-group {
-  margin-right: 4px;
+#top_rung ul li{
+    display: inline;
+    font-size: 100%;
+    margin: 0 4px;
+    text-decoration: underline;
 }
-
+#top_rung ul li i {
+  margin-top: 2px;
+}
+#bottom_rung {
+  line-height: 14px;
+  margin-top: 4px;
+}
+#bottom_rung i{
+  margin-top: 2px;
+}
 .search-bar {
   margin: 16px 4px 0 4px;
   width: auto;
@@ -204,77 +214,17 @@ div.rolemenu-position {
     box-shadow: 0px 3px 5px 2px #cccccc; }
 
 
+
 /* fatheader */
 .fatheader {
-	border: 1px solid #ddd;
-  background: #f6f6f6;
-	width: 938px;
-}
-.fatheader div {
-	background: #f6f6f6;
-	float: left;
-	display: inline-block;
-	border-right: 1px solid #ddd;
-  border-left: 1px solid #fff;
-	padding: 8px 7px 0 8px;
-  width:117px;
-  height: 56px;
-	margin: 0;
+  background:#eee;
 }
 
-.fatheader div a {
-  float: left;
-  display: block;
-  width: 120px;
-  font-size: 90%;
-  padding: 0;
-  margin: 0;}
-
-.fatheader span.fatheader-number{
-  float: left;
-  display: block;
-  font-size: 180%;
-  font-weight: bold;
-  padding: 8px 0 0 0;
+.fatheader div.span2 {
+  border-right: 1px solid #ddd;
+  height: 48px;
+  padding: 8px;
 }
-
-.fatheader i{
-  float: left;
-  display: block;
-  margin-top: 14px;
-  padding: 0 4px 0 0;
-}
-
-.fatheader span.percentage {
-  float: left;
-  display: block;
-  font-size: 120%;
-  font-weight: bold;
-  padding: 11px 0 0 16px;
-} 
-
-.fatheader  div.selected {
-	background: #666;
-  color: #fff;
-}
-.fatheader  div.selected a {
-  color: #fff;
-}
-.fatheader div.last {
-	border-right: none;
-}
-.fatheader div.first {
-  border-left: none;
-}
-.fatheader  div:hover {
-    background: #BDDEBE;
-    color: #333;
-} 
-.fatheader  div:hover a{
-    background: #BDDEBE;
-    color: #333;
-} 
-
 
 .filter-row {
 	float: left;
@@ -591,7 +541,7 @@ background-image: url("../images/glyphicons-halflings-white.png");
 /* forms input */
 
 label, input, button, select, textarea {
-    font-size: 100%;
+    font-size: 90%;
     font-weight: normal;
     line-height: auto;
 }
@@ -622,11 +572,13 @@ height: 18px;
 padding: 2px 4px;
 font-size: 12px;
 line-height: 18px;
-margin: 0px 4px;
 }
 
 .input-mini {
   width: 20px;
+}
+.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
+    color: #333;
 }
 
 /* Modal */
@@ -736,7 +688,6 @@ ul.presentation-nav li{
 
 .nav-tabs > li, .nav-pills > li {
     margin-left: 8px;
-    margin-right: 2px;
     float: left;
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
