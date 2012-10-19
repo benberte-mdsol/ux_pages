@@ -15,11 +15,11 @@
 <meta name="viewport" content="width=device-width">
 
 <!-- STYLESHEETS HERE -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
 
-<link rel="stylesheet" href="css/application.css">
+<link rel="stylesheet" href="stylesheets/application.css">
 
-<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="stylesheets/buttons.css">
 
 
 
@@ -35,7 +35,7 @@
     <ul class="pull-right account-nav">
       <li class="pull-left"> Role</li>
       <li>
-          <div class="btn-toolbar pull-left">
+        <div class="btn-toolbar pull-left">
         <div class="btn-group">
           <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Clinical Quality Management<span class="caret"></span></button>
           <ul class="dropdown-menu">
@@ -68,104 +68,107 @@
 
 <div class="container">
 
-
+  <ul id ="myTab" class="nav nav-tabs">
+    <li class="active">
+    <a href="#">Randimization Design</a>
+    </li>
+    <li><a href="#">Treatment Design</a></li>
+    <li><a href="#">Visits</a></li>
+    <li><a href="#">Assign Treatments</a></li>
+    <li class="pull-right"><a href="#">Simulations</a></li>
+  </ul>
   <div class="span12 b-header">
-  <h4> Treatment Design</h4>
+
+  <h4 class="span3">Randomization Design</h4>
+  <div class="btn-toolbar">
+        <div class="btn-group">
+          <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Dynamic Allocation<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+
   </div>
 
 <section class="span12" style="padding: 10px; border: 1px solid #ccc;">
 
   <div class="span6 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
 
-    <h4 class="pull-left"> Article Type</h4>
-    <button class="btn tertiary-btn positive-btn pull-right"><i class="icon-plus icon-positive"></i>Add Article Type</button>
+    <h4 class="pull-left">Study Arms</h4>
+ 
 
     <table class="table table-condensed table-bordered table-striped">
       <thead>
-        <th>Min Days Between Dispensing</th>
+        <th>Ratio</th>
         <th>Name</th>
       </thead>
       <tbody> 
         <tr>
-          <td>90</td>
-          <td>Dysophimine 5mg</td>
+          <td class="span2"><input class="input-mini" type="text" placeholder="1"></td>
+          <td>Active</td>
         </tr>
-        <tr>
-          <td>90</td>
-          <td>Dysophimine 10mg</td>
-        </tr>
-         <tr>
-          <td>90</td>
-          <td>Dysophimine 10mg</td>
-        </tr>
-        <tr>
-          <td>90</td>
-          <td>Placebo</td>
-        </tr>
+
      
        </tbody> 
     </table>
-
-    <h4 class="pull-left">Treatment Compositions</h4>
-    <button class="btn tertiary-btn positive-btn pull-right"><i class="icon-plus icon-positive"></i>Add Treatment</button>
-
+       <button class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Arm</button>
+      </br>
+    </br>
+    <h4 class="pull-left">Randimization Factors</h4>
+   
     <table class="table table-condensed table-bordered table-striped">
       <thead>
-        <th>Active - Low Dose</th>
-        <th>1 x Dysophomine 10mg</th>
+        <th class="span2">Weight</th>
+        <th>Factor</th>
+        <th>Values</th>
       </thead>
       <tbody> 
         <tr>
-          <td>Active - Mid Dose</td>
-          <td>1 x Dysophomine 10mg, 1 x Dysophomine 5mg</td>
+          <td><input class="input-mini" type="text" placeholder="1"></td>
+          <td>Site</td>
+          <td>N/A</td>
         </tr>
         <tr>
-          <td>Active - High Dose</td>
-          <td>1 x Dysophomine 20mg</td>
+          <td><input class="input-mini" type="text" placeholder="1"></td>
+          <td>Stratum</td>
+          <td>N/A</td>
         </tr>
          <tr>
-          <td>Placebo</td>
-          <td>1 x Placebo</td>
+          <td><input class="input-mini" type="text" placeholder="1"></td>
+          <td>Study</td>
+          <td>N/A</td>
         </tr>
        </tbody> 
     </table>
-  
+   <button class="btn tertiary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Factor</button>
+
   </div>
 
 <div class="span6 pull-right">
 
-  <h4 class="pull-left"> Dosing Factors</h4>
-  <button class="btn tertiary-btn positive-btn pull-right"><i class="icon-plus icon-positive"></i>Add Article Type</button>
-
+  <h4 class="pull-left span6"> General</h4>
+  <p> Randomization Second Best Probability (%) <a href="#"><i class="icon-question-sign icon-positive"></i></a></p>
+  <input class="input-mini" type="text" placeholder="1">
+</br>
+</br>
+  <h4 class="pull-left">Strata</h4>
   <table class="table table-condensed table-bordered table-striped">
     <thead>
-      <th>Min Days Between Dispensing</th>
       <th>Name</th>
     </thead>
-    <tbody> 
-      <tr>
-        <td>90</td>
-        <td>Dysophimine 5mg</td>
-      </tr>
-      <tr>
-        <td>90</td>
-        <td>Dysophimine 10mg</td>
-      </tr>
-       <tr>
-        <td>90</td>
-        <td>Dysophimine 10mg</td>
-      </tr>
-      <tr>
-        <td>90</td>
-        <td>Placebo</td>
-      </tr>
-   
-     </tbody> 
   </table>
-  
-
 
 </section>
+
+<div class="action-row span12">
+  <button class="btn secondary-btn positive-btn "><i class="icon-ok icon-positive"></i>Save Design</button>
+</div>
+
 <footer>
         <div class="footer-wrapper">
           <a href="#" class="logo"><img src="images/md_logo.gif"></a>
