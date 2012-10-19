@@ -62,129 +62,84 @@
   <ul id ="myTab" class="nav nav-tabs">
     <li><a href="#">Randomization Design</a> </li>
     <li><a href="#">Treatment Design</a></li>
-    <li><a href="#">Visits</a></li>
-    <li class="active" >
-      <a href="#">Assign Treatments</a>
-    </li>
+    <li class="active"><a href="#">Visits</a></li>
+    <li><a href="#">Assign Treatments</a></li>
     <li class="pull-right"><a href="#">Simulations</a></li>
   </ul>
+
   <div class="span12 b-header">
-
-  <h4>Assign Treatments</h4>
-  
-
+    <h4 class="span4">Visits</h4>
+    <button class="btn secondary-btn positive-btn pull-right"><i class="icon-plus icon-positive"></i>Add Visits</button> 
   </div>
 
 <section class="span12" style="padding: 10px; border: 1px solid #ccc;">
 
-  <div class="span8 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
+  <table class="table table-bordered visit-table">
+    <tr>
+      <td class="span3"><strong>Name</strong></td>
+      <td>
+        <div class="controls">
+            <input type="text" id="name" name="name" class="input-small" placeholder="Visit 1">
+            <button class="btn tertiary-btn negative-btn "><i class="icon-remove icon-negative"></i></button>
+        </div>
+      </td>
+      <td>
+        <div class="controls">
+            <input type="text" id="name" name="name" class="input-small" placeholder="Visit 1">
+        </div>
+      </td>
+      <td>
+        <div class="controls">
+            <input type="text" id="name" name="name" class="input-small" placeholder="Visit 1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Offset</strong></td>
+      <td>
+        
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Window</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="visit-properties">
+      <td><strong>Visit Properties</strong></td>
+      <td>
+        <strong>Randomization Visit</strong>
+        <label class="checkbox">
+          <input type="checkbox"> Dosing
+        </label>
+      </td>
+      <td>
+      </br>
+        <label class="checkbox">
+          <input type="checkbox"> Dosing
+        </label>
+      </td>
+      <td>
+        </br>
+        <label class="checkbox">
+          <input type="checkbox"> Dosing
+        </label>
+      </td>
+    </tr>
+  </table>
 
-    <h6>Filter a set of rules, then select them.</h6>
-
-    <!-- Fatheader goes here -->
-<div class="fatheader">
-      <a href="#" class="span2 selected">
-        All Rules
-        <h3>20</h3>
-      </a>
-        <a href="#" class="span2">
-        Unassigned Rules
-        <h3>8</h3>
-      </a>
-      <a href="#"class="span2">
-        Assigned Rules
-        <h3>12</h3>
-      </a>
-</div> 
-
-<div class="clearfix"></div>
-s
-<div class="results">
-  <p class="pull-left">0 Selected</p>
-  <p class="pull-right">6 Rules</p>
-</div>
-
-    <table class="table table-bordered table-striped span8">
-      <thead>
-        <th><input type="checkbox"></th>
-        <th>Arm</th>
-        <th>Visit</th>
-        <th>Treatment Compositions</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>Active</td>
-          <td>Visit 1</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-<div class="span4 pull-right">
-
-<h6>Then, click on a treatment to assign to them</h6>
- 
-    <table class="table table-bordered table-striped">
-      <thead>
-        <th></th>
-        <th>Treatment Compositions</th>
-      </thead>
-      <tbody>
-          <tr>
-            <td></td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Do Not Dose</td>
-          </tr>
-        </tbody>  
-    </table>
-
-    <button class="btn tertiary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Treatment</button> 
-
-  </div>
-
+  <button class="btn secondary-btn positive-btn"><i class="icon-ok icon-positive"></i>Save</button>
+  <button class="btn secondary-btn negative-btn"><i class="icon-remove icon-negative"></i>Cancel</button>
+    
 
   
-
 </section>
 
 
-<div class=ß
+
 <footer>
         <div class="footer-wrapper">
           <a href="#" class="logo"><img src="images/md_logo.gif"></a>
