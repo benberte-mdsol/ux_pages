@@ -1,0 +1,51 @@
+.edc_row {
+	border-bottom:1px dotted #DDD;
+	padding:8px;
+}
+
+.edc_row:hover {
+	background-color: #e1edce;
+}
+
+.ecrfLabel {
+	color: #999;
+}
+
+.req {
+	color: #666;
+}
+
+.reqIndicator {
+	font-size: 16pt;
+	line-height: 10px;
+	font-weight: 600;
+	color: #333;
+	margin: 0 0 0 2px;
+}
+
+.ecrfData {
+}
+
+.holder {
+	text-align: left;
+	display: block;
+	margin:0;
+	padding: 2px 0 8px 26px;
+}
+
+.indent1 {
+	margin:0 0 0 16px;
+}
+
+.indent2 {
+	margin:0 0 0 32px;
+}
+
+.indent3 {
+	margin:0 0 0 48px;
+}
+
+
+input {
+border: 1px solid #BCCDF0;
+}

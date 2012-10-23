@@ -27,6 +27,51 @@ h2 {
 .container {
   margin-top: 16px;
 }
+/* =header
+***********************************************************/
+header, #header {}
+#header h1 {
+	margin: 0;
+	padding-left: 36px;
+	background: transparent url(../images/mdsol_logo.png) no-repeat;
+	margin: 16px;
+	float: left;
+}
+
+.header {
+  display: block;
+  height: 60px;
+}
+img.logo{
+  float: left;
+  display: inline-block;
+  margin: 8px 0 8px 8px;
+}
+img.customerlogo{
+  float: left;
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+}
+ul.account-nav {
+  margin: 18px 0 8px 0;
+}
+
+ul.account-nav li {
+  display: inline;
+  margin: 2px 4px 0 4px;
+  list-style-type: none;
+  font-size: 90%;
+}
+
+ul.account-nav li i{
+  margin-right: 4px;
+}
+
+ul.account-nav li .btn-group {
+  margin-right: 4px;
+}
+
+
 
 /* header */
 header {
