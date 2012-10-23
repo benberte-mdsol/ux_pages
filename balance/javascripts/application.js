@@ -67,7 +67,7 @@ $(function() {
 
 		
 	},
-	navTemplate = '<ul class="dropdown-menu">{{#patterns}}<li><a href="{{url}}">{{name}}</a></li>{{/patterns}}</ul>',
+	navTemplate = '<ul class="dropdown-menu">{{#patterns}}<li><a href="{{url}}">{{name}}</a></li>{{/patterns}}</ul>';
 	// html = Mustache.to_html(navTemplate, menu_items);
 	// $('#pattern-menu').append(html);
 	// $('.dropdown-toggle').dropdown();
@@ -77,4 +77,5 @@ $(function() {
 	// 	'class': 'modal hide fade',
 	// 	'html': '<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>UPDATE NOTICE</h3></div><div class="modal-body"><h1 class="alert alert-error">All new work must be done on a new branch that was created from a clean, up-to-date master branch. Delete all your old local branches and update master before you proceed.</h1></div>'
 	// }).appendTo('body').modal();
+
 });

@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Users Assigned to StudyName1 </title>
+<title>Balance - Randomization Design - Add Arm</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -32,7 +32,8 @@
 <header id="header">
   <img class="logo" src="images/logo.png">
 
-     <div id="user-area">
+   
+  <div id="user-area">
     <div id="top_rung">
       <ul>
         <li><i class="icon-question-sign icon-positive"></i><a href="">Help</a></li>
@@ -42,6 +43,7 @@
     
     <div id="bottom_rung"><i class="icon-user"></i>Peter Parker (Spidey)</div>
   </div>
+
 
 
 
@@ -62,26 +64,15 @@
     <li class="active">
     <a href="#">Randomization Design</a>
     </li>
-    <li><a href="trt_0.html">Treatment Design</a></li>
+    <li><a href="#">Treatment Design</a></li>
     <li><a href="#">Visits</a></li>
     <li><a href="#">Assign Treatments</a></li>
     <li class="pull-right"><a href="#">Simulations</a></li>
   </ul>
   <div class="span12 b-header">
 
-  <h4 class="span3">Randomization Design</h4>
-  <div class="btn-toolbar">
-        <div class="btn-group">
-          <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Dynamic Allocation<span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div>
+  <h4 class="span3">Manage Treatment</h4>
+  
 
   </div>
 
@@ -89,72 +80,70 @@
 
   <div class="span6 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
 
-    <h4 class="pull-left">Study Arms</h4>
- 
+    <h6>Fields marked with an asterisk (*) are required.</h6>
 
-    <table class="table table-condensed table-bordered table-striped">
-      <thead>
-        <th>Ratio</th>
-        <th>Name</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td class="span2"><input class="input-mini" type="text" placeholder="1"></td>
-          <td><a href="#">Active</a></td>
-        </tr>
-        <tr>
-          <td class="span2"><input class="input-mini" type="text" placeholder="1"></td>
-          <td><a href="#">Placebo</a></td>
-        </tr>
+       <div class="control-group">
+        <label for="name" class="control-label"><strong>Name<strong><span class="required">*</span></label>
+            <div class="controls">
+            <input type="text" id="name" name="name" class="input-xlarge">
+            </div>
+            
+            <button class="btn secondary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Article Type to Treatment</button>
 
-     
-       </tbody> 
-    </table>
-       <button href="/addarm2.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Arm</button>
-      </br>
-    </br>
-    <h4 class="pull-left">Randomization Factors</h4>
-   
-    <table class="table table-condensed table-bordered table-striped">
-      <thead>
-        <th class="span2">Weight</th>
-        <th>Factor</th>
-        <th>Values</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Site</td>
-          <td>N/A</td>
-        </tr>
-        <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Stratum</td>
-          <td>N/A</td>
-        </tr>
-         <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Study</td>
-          <td>N/A</td>
-        </tr>
-       </tbody> 
-    </table>
-   <button class="btn tertiary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Factor</button>
+            <div class="clearfix"></div>
+            <br>
+
+          <label for="name" class="control-label"><strong>Treatment Article Type</strong><span class="required">*</span></label>
+
+            <select class="span4">
+              <option value="option1">None Selected</option>
+              <option value="option2">MZ - 3022104 125mg</option>
+              <option value="option3">MZ - 3022104 250mg</option>
+              <option value="option4">MZ - 3022104 375mg</option>
+              <option value="option5">MZ - 3022104 500mg</option>
+              <option value="option6">Placebo 125mg</option>
+              <option value="option7">Placebo 250mg</option>
+              <option value="option8">Placebo 375mg</option>
+              <option value="option9">Placebo 500mg</option>
+            </select> 
+            x <input type="text" name="name" class="input-mini" placeholder="1"> 
+             <button class="btn tertiary-btn negative-btn "><i class="icon-remove icon-negative"></i></button>
+
+
+             <select class="span4">
+              <option value="option1">None Selected</option>
+              <option value="option2">MZ - 3022104 125mg</option>
+              <option value="option3">MZ - 3022104 250mg</option>
+              <option value="option4">MZ - 3022104 375mg</option>
+              <option value="option5">MZ - 3022104 500mg</option>
+              <option value="option6">Placebo 125mg</option>
+              <option value="option7">Placebo 250mg</option>
+              <option value="option8">Placebo 375mg</option>
+              <option value="option9">Placebo 500mg</option>
+            </select> 
+            x <input type="text" name="name" class="input-mini" placeholder="1"> 
+             <button class="btn tertiary-btn negative-btn "><i class="icon-remove icon-negative"></i></button>
+
+            <div class="clearfix"></div>
+            <br>
+
+            <label for="name" class="control-label" >Description</label>
+            <div class="controls">
+            <textarea class="input-xlarge" rows="4"></textarea>
+          </div>
+       </div>
+    
 
   </div>
 
-<div class="span6 pull-right">
 
-  <h4 class="pull-left span6"> General</h4>
-  <p> Randomization Second Best Probability (%) <a href="#"><i class="icon-question-sign icon-positive"></i></a></p>
-  <input class="input-mini" type="text" placeholder="5">
-</br>
-</br>
+  
 
 </section>
 
 <div class="action-row span12">
-  <button class="btn secondary-btn positive-btn "><i class="icon-ok icon-positive"></i>Save Design</button>
+  <button href="trt_5.html" id=".btn" class="btn secondary-btn positive-btn "><i class="icon-ok icon-positive"></i>Save</button>
+  <button class="btn secondary-btn negative-btn "><i class="icon-remove icon-negative"></i>Cancel</button>
 </div>
 
 <footer>
@@ -171,9 +160,9 @@
         </p>
       </div>
 </footer> 
-</div>
 
 
+  
 
 <!-- END SITE CONTENT --> 
 

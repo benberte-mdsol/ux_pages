@@ -1,0 +1,199 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Balance - Randomization Design - Add Factor </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- STYLESHEETS HERE -->
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
+
+<link rel="stylesheet" href="stylesheets/application.css">
+<link rel="stylesheet" href="stylesheets/jquery.multiselect.css">
+<link rel="stylesheet" href="stylesheets/jquery-ui-1.9.0.custom">
+
+
+<link rel="stylesheet" href="stylesheets/buttons.css">
+
+
+
+<!-- NO OTHER JAVSCRIPT IN THE HEAD -->
+<script src="javascripts/modernizr.js"></script>
+</head>
+<body>
+<!-- SITE CONTENT -->
+
+<header id="header">
+  <img class="logo" src="images/logo.png">
+
+   
+  <div id="user-area">
+    <div id="top_rung">
+      <ul>
+        <li><i class="icon-question-sign icon-positive"></i><a href="">Help</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>  
+    </div>
+    
+    <div id="bottom_rung"><i class="icon-user"></i>Peter Parker (Spidey)</div>
+  </div>
+
+
+
+</header>
+<nav id="navigation_bar">
+  <ul class="clearfix">
+    <li class="first">
+    <a href="/"><img alt="Home" src="images/home.png"/></a>
+    </li>
+
+  </ul>
+</nav>
+
+
+<div class="container">
+
+  <ul id ="myTab" class="nav nav-tabs">
+    <li><a href="#">Randomization Design</a> </li>
+    <li class="active"><a href="#">Treatment Design</a></li>
+    <li><a href="">Visits</a></li>
+    <li><a href="#">Assign Treatments</a></li>
+    <li class="pull-right"><a href="#">Simulations</a></li>
+  </ul>
+  <div class="span12 b-header">
+
+  <h4>Add Titration Level Set</h4>
+  
+
+  </div>
+
+<section class="span12" style="padding: 10px; border: 1px solid #ccc;">
+
+  <div class="span6 pull-left" >
+
+       <div class="control-group">
+        <label for="name" class="control-label"><strong>Name</strong><span class="required">*</span></label>
+            <div class="controls">
+            <input type="text" id="name" name="name" class="input-xlarge">
+            </div>
+        </div>
+
+        <select class="multispecial" title="Basic example" multiple="multiple" name="example-basic" size="5">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+              <option value="option5">Option 5</option>
+              <option value="option6">Option 6</option>
+              <option value="option7">Option 7</option>
+              <option value="option8">Option 8</option>
+              <option value="option9">Option 9</option>
+              <option value="option10">Option 10</option>
+              <option value="option11">Option 11</option>
+              <option value="option12">Option 12</option>
+            </select>
+
+
+  </div>
+
+
+<div class="span6 pull-right" style="padding-left:10px; border-left:1px solid #ddd;">
+        <h3> Levels</h3>
+        <table class="table table-condensed">
+          <thead style="background: none; border: none;">
+            <th></th>
+            <th><strong>Name</strong></th>
+            <th><strong>Intial Dose</strong></th>
+            <th></th>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="span1">1</td>
+                <td class="span2"> 
+                  <div class="controls">
+                    <input type="text" id="name" name="name" class="input-medium"  placeholder="Level 1">
+                  </div>
+                </td>
+                <td>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"  checked>
+                </td>
+                <td>
+                  <button class="btn tertiary-btn negative-btn" style="margin-bottom:9px;"><i class="icon-remove icon-negative"></i>Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="controls">
+                    <input type="text" id="name" name="name" class="input-medium" placeholder="Level 2">
+                  </div>
+                </td>
+                <td><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"></td>
+                <td>
+                  <button class="btn tertiary-btn negative-btn" style="margin-bottom:9px;"><i class="icon-remove icon-negative"></i>Remove</button>
+                </td>
+              </tr>
+            </tbody>  
+          </table>  
+    
+        <button class="btn secondary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Level</button> 
+       </div>
+       <div class="clearfix"></div>
+<br/>
+</section>
+
+<div class="action-row span12">
+  <button id=".btn" class="btn secondary-btn positive-btn" href="ls_1.html"><i class="icon-ok icon-positive"></i>Save</button>
+  <button class="btn secondary-btn negative-btn "><i class="icon-remove icon-negative"></i>Cancel</button>
+</div>
+
+
+
+<footer>
+        <div class="footer-wrapper">
+          <a href="#" class="logo"><img src="images/md_logo.gif"></a>
+
+          <p class="">
+            <a href="https://www.imedidata.com/">iMedidata</a>&reg;  
+            <a href="#"> Privacy Policy</a>  
+            <a href="#">Terms of Use</a><br/>
+            Copyright &copy; 2012 <a href="http://mdsol.com" target="_blank">Medidata Solutions, Inc.</a> 
+            <br>
+            Your session will expire at 08-24-2012 12:39:56 pm EDT
+        </p>
+      </div>
+</footer> 
+
+
+  
+
+<!-- END SITE CONTENT --> 
+
+<!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 
+<script src="javascripts/jquery.js"></script> 
+<script src="javascripts/jquery-ui.custom.js"></script> 
+<script src="javascripts/jquery.multiselect.js"></script> 
+<script src="javascripts/bootstrap.js"></script> 
+<script src="javascripts/application.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.btn').on('click', function(e) {
+      e.preventDefault();
+      window.location = $(e.currentTarget).attr('href');
+    });
+  });
+</script>
+<script type="text/javascripts">
+  $('.multispecial').multiselect().multiselectfilter({label: ''});
+</script>
+</body>
+</html>

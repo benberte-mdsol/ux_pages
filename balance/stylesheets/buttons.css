@@ -59,7 +59,7 @@
 
 .tertiary-btn {
     background: #fff;
-    border: #fff;
+    border: 1px solid #fff;
     padding: 0 8px;
     box-shadow: none;
 }

@@ -30,6 +30,11 @@ h2 {
   color: #B94A48;
   font-size: 120%;
 }
+.zero-case {
+   color: #AAAAAA;
+   font-style: italic;
+   text-align: center;
+}
 
 /* header */
 header {
@@ -357,9 +362,7 @@ background-color: #F4F4F4;
           border-top-right-radius: 0px;
   -moz-border-right-topleft: 0px;
 }
-tbody tr:hover{
-   background:#BDDEBE;
-}
+
 
 .negative {
 background-color:#ffd9d9;
@@ -470,6 +473,8 @@ tfoot {
 }
 
 
+
+
 /* footer */
 
 footer {
@@ -569,8 +574,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-height: 18px;
-padding: 2px 4px;
+
 font-size: 12px;
 line-height: 18px;
 background: #f9f9f9;
@@ -709,4 +713,13 @@ ul.presentation-nav li{
 
 }
 
+div.controls button.btn {
+  background: transparent;
+  border: none;
+  margin-bottom: 8px;
+}
 
+div.controls button.btn:hover {
+  background: #990000;
+  text-shadow: 0 1px 1px #853D3D;
+}
