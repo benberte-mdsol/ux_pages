@@ -41,6 +41,8 @@ header, #header {}
 .header {
   display: block;
   height: 60px;
+  margin:0px;
+  padding:0px;
 }
 img.logo{
   float: left;
@@ -70,24 +72,6 @@ ul.account-nav li i{
 
 ul.account-nav li .btn-group {
   margin-right: 4px;
-}
-
-
-
-/* header */
-header {
-	height:64px;
-	width: 100%;
-}
-
-img.logo{
-  float: left;
-  display: inline-block;
-  margin: 8px;
-}
-
-ul.account-nav {
-  margin: 16px 0;
 }
 
 ul.account-nav li {
