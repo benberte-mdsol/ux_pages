@@ -61,6 +61,7 @@ ul.account-nav li {
   margin: 2px 4px 0 4px;
   list-style-type: none;
   font-size: 90%;
+  color:#666;
 }
 
 ul.account-nav li i{

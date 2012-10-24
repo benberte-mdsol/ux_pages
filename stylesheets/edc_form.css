@@ -1,3 +1,10 @@
+#edc_form_header_controls li{
+display: inline;
+list-style-type: none;
+padding-right: 8px;
+}
+
+
 .edc_row {
 	border-bottom:1px dotted #DDD;
 	padding:8px;
