@@ -1,0 +1,268 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Users Assigned to StudyName1 </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- STYLESHEETS HERE -->
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
+
+<link rel="stylesheet" href="stylesheets/application.css">
+
+<link rel="stylesheet" href="stylesheets/buttons.css">
+
+
+
+<!-- NO OTHER JAVSCRIPT IN THE HEAD -->
+<script src="javascripts/modernizr.js"></script>
+</head>
+<body>
+<!-- SITE CONTENT -->
+
+<header id="header">
+  <img class="logo" src="images/logo.png">
+
+<div id="user-area">
+    <div id="top_rung">
+      <ul>
+        <li><i class="icon-question-sign icon-positive"></i><a href="">Help</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>  
+    </div>
+    
+    <div id="bottom_rung"><i class="icon-user"></i>Peter Parker (Spidey)</div>
+  </div>
+
+
+
+</header>
+<nav id="navigation_bar">
+  <ul class="clearfix">
+    <li class="first">
+    <a href="/"><img alt="Home" src="images/home.png"/></a>
+    </li>
+
+  </ul>
+</nav>
+
+ <div class="alert alert-success">
+  <img src="../images/i_success.gif" alt="Success">
+    <strong>Success!</strong> "Active - Level 4" has successfully been added as a treatment to the treatment design.
+</div>
+
+<div class="container">
+
+  <ul class="nav nav-tabs" id="myTab">
+        <li><a href="#profile" data-toggle="tab">Randomization Design</a></li>
+
+        <li class="active"><a href="#treatment_design" data-toggle="tab">Treatment Design</a></li>
+        <li><a href="#settings" data-toggle="tab">Visits</a></li>
+        <li><a href="#settings" data-toggle="tab">Assign Treatments</a></li>
+        <li class="pull-right"><a href="#message" data-toggle="tab">Simulations</a></li>
+  </ul>
+
+  <div class="span12 b-header" id="treatment_design">
+  <h4>Treatment Design</h4>
+  </div>
+
+<section class="span12" style="padding: 10px; border: 1px solid #ccc;">
+
+  <div class="span6 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
+    <h4>Article Type</h4>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Min Days Between <br>Dispensing and Expiration</th>
+        <th>Name</th>
+      </thead>
+      <tbody> 
+        <tr>
+          <td>30</td>
+          <td>MZ - 3022104 125mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>MZ - 3022104 250mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>MZ - 3022104 375mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>MZ - 3022104 500mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Placebo 125mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Placebo 250mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Placebo 375mg</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Placebo 500mg</td>
+        </tr>
+        </tbody> 
+    </table>
+      <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Arm</button>
+      <br/><br/>
+
+    <h4>Treatment Compositions</h4>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Name</th>
+        <th>Article Types</th>
+      </thead>
+      <tbody> 
+        <tr>
+          <td>Active - Level 1</td>
+          <td>1 x MZ - 3022104 125mg</td>
+        </tr>
+        <tr>
+          <td>Active - Level 2</td>
+          <td>1 x MZ - 3022104 250mg</td>
+        </tr>
+        <tr>
+          <td>Active - Level 3</td>
+          <td>1 x MZ - 3022104 375mg</td>
+        </tr>
+        <tr>
+          <td>Active - Level 4</td>
+          <td>1 x MZ - 3022104 500mg</td>
+        </tr>
+
+    </table>
+
+      <button href="add_trt_5.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Treatment</button>
+      <br/><br/>
+
+    <h4>Dosing Factors</h4>
+        <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Dosing Factor</button>
+  </div>
+
+<div class="span6 pull-right">
+  <h3><label class="checkbox">
+    <input type="checkbox">Titration</label></h3>
+
+  <h4>Titration Level Sets</h4>
+
+    <button href="/addls1.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Level Set</button>
+    <br/><br/>
+
+  <h4>Titration Limiting Rules</h4>
+        <table class="table table-bordered table-striped">
+      <thead>
+        <th></th>
+        <th>Name</th>
+        <th>Times Allowed</th>
+      </thead>
+      <tbody> 
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Up</td>
+          <td><input class="input-mini" type="text"></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Down</td>
+          <td><input class="input-mini" type="text"></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Hold</td>
+          <td></td>
+        </tr>
+         <tr>
+          <td><input type="checkbox"></td>
+          <td><input class="input-mini" type="text"> Maximum number levels to skip up</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td><input class="input-mini" type="text"> Maximum number levels to skip down</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>If a subject has titrated up, do not go back down</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>If a subject has titrated down, do not go back up</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>If a level threshold has been reached,           
+            <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+          <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Maintain Level, Show Warning<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Maintain Level, Show Warning</a></li>
+            <li><a href="#">Maintain Level Silently</a></li>
+            <li><a href="#">Show Warning, Do Not Dispense</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+    </td>
+          <td></td>
+        </tr>
+     
+       </tbody> 
+    </table>
+
+
+</section>
+</br>
+<div class="clearfix"></div>
+<footer>
+        <div class="footer-wrapper">
+          <a href="#" class="logo"><img src="images/md_logo.gif"></a>
+
+          <p class="">
+            <a href="https://www.imedidata.com/">iMedidata</a>&reg;  
+            <a href="#"> Privacy Policy</a>  
+            <a href="#">Terms of Use</a><br/>
+            Copyright &copy; 2012 <a href="http://mdsol.com" target="_blank">Medidata Solutions, Inc.</a> 
+            <br>
+            Your session will expire at 08-24-2012 12:39:56 pm EDT
+        </p>
+      </div>
+</footer> 
+</div>
+
+
+
+<!-- END SITE CONTENT --> 
+
+<!-- ALL SITE JAVSCRIPT BELOW THIS LINE --> 
+<script src="javascripts/jquery.js"></script> 
+<script src="javascripts/bootstrap.js"></script> 
+<script src="javascripts/application.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.btn').on('click', function(e) {
+      e.preventDefault();
+      window.location = $(e.currentTarget).attr('href');
+    });
+  });
+</script>
+</body>
+</html>

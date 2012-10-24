@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Users Assigned to StudyName1 </title>
+<title>Balance - Randomization Design - Add Factor </title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -32,7 +32,8 @@
 <header id="header">
   <img class="logo" src="images/logo.png">
 
-     <div id="user-area">
+   
+  <div id="user-area">
     <div id="top_rung">
       <ul>
         <li><i class="icon-question-sign icon-positive"></i><a href="">Help</a></li>
@@ -62,26 +63,15 @@
     <li class="active">
     <a href="#">Randomization Design</a>
     </li>
-    <li><a href="trt_0.html">Treatment Design</a></li>
+    <li><a href="#">Treatment Design</a></li>
     <li><a href="#">Visits</a></li>
     <li><a href="#">Assign Treatments</a></li>
     <li class="pull-right"><a href="#">Simulations</a></li>
   </ul>
   <div class="span12 b-header">
 
-  <h4 class="span3">Randomization Design</h4>
-  <div class="btn-toolbar">
-        <div class="btn-group">
-          <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Dynamic Allocation<span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div>
+  <h4>Randomization Factor Details</h4>
+  
 
   </div>
 
@@ -89,72 +79,65 @@
 
   <div class="span6 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
 
-    <h4 class="pull-left">Study Arms</h4>
- 
+    <h6>Fields marked with an asterisk (*) are required.</h6>
 
-    <table class="table table-condensed table-bordered table-striped">
-      <thead>
-        <th>Ratio</th>
-        <th>Name</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td class="span2"><input class="input-mini" type="text" placeholder="1"></td>
-          <td><a href="#">Active</a></td>
-        </tr>
-        <tr>
-          <td class="span2"><input class="input-mini" type="text" placeholder="1"></td>
-          <td><a href="#">Placebo</a></td>
-        </tr>
+       <div class="control-group">
+        <label for="name" class="control-label"><strong>Name</strong><span class="required">*</span></label>
+            <div class="controls">
+            <input type="text" id="name" name="name" class="input-xlarge">
+            </div>
+        </div>
 
-     
-       </tbody> 
-    </table>
-       <button href="/addarm2.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Arm</button>
-      </br>
-    </br>
-    <h4 class="pull-left">Randomization Factors</h4>
-   
-    <table class="table table-condensed table-bordered table-striped">
-      <thead>
-        <th class="span2">Weight</th>
-        <th>Factor</th>
-        <th>Values</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Site</td>
-          <td>N/A</td>
-        </tr>
-        <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Stratum</td>
-          <td>N/A</td>
-        </tr>
-         <tr>
-          <td><input class="input-mini" type="text" placeholder="1"></td>
-          <td>Study</td>
-          <td>N/A</td>
-        </tr>
-       </tbody> 
-    </table>
-   <button class="btn tertiary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add Factor</button>
+            <label class="checkbox" style="margin:8px 0;">
+                <input type="checkbox"> Use a Dosing Factor
+            </label>
+
+           <div class="control-group"> 
+             <label for="inputError" class="control-label"><strong>Weight</strong><span class="required">*</span></label>
+                <div class="controls error">
+                  <input type="text" id="inputError" class="input-mini error" placeholder="1">
+                </div> 
+            </div> 
+            
+            <label for="name" class="control-label" >Description</label>
+            <div class="controls">
+            <textarea class="input-xlarge" rows="5" style="height: 64px;"></textarea>
+          </div>
+
+
 
   </div>
 
-<div class="span6 pull-right">
 
-  <h4 class="pull-left span6"> General</h4>
-  <p> Randomization Second Best Probability (%) <a href="#"><i class="icon-question-sign icon-positive"></i></a></p>
-  <input class="input-mini" type="text" placeholder="5">
-</br>
-</br>
+<div class="span6 pull-right">
+        </br>
+       
+        </br>
+       <div class="control-group">
+        <label for="name" class="control-label"><strong>States*</strong></label>
+            <div class="controls">
+            <input type="text" id="name" name="name" class="input-xlarge"> 
+            <button class="btn tertiary-btn negative-btn" style="margin-bottom:9px;"><i class="icon-remove icon-negative"></i>Remove</button> 
+
+            <input type="text" id="name" name="name" class="input-xlarge">
+            <button class="btn tertiary-btn negative-btn" style="margin-bottom:9px;"><i class="icon-remove icon-negative"></i>Remove</button> 
+            </div>
+            
+         
+         <button class="btn secondary-btn positive-btn "><i class="icon-plus icon-positive"></i>Add States</button> 
+       </div>
+    
+
+  </div>
+
+
+  
 
 </section>
 
 <div class="action-row span12">
-  <button class="btn secondary-btn positive-btn "><i class="icon-ok icon-positive"></i>Save Design</button>
+  <button class="btn secondary-btn positive-btn "><i class="icon-ok icon-positive"></i>Save</button>
+  <button class="btn secondary-btn negative-btn "><i class="icon-remove icon-negative"></i>Cancel</button>
 </div>
 
 <footer>
@@ -171,9 +154,9 @@
         </p>
       </div>
 </footer> 
-</div>
 
 
+  
 
 <!-- END SITE CONTENT --> 
 
@@ -181,13 +164,5 @@
 <script src="javascripts/jquery.js"></script> 
 <script src="javascripts/bootstrap.js"></script> 
 <script src="javascripts/application.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $('.btn').on('click', function(e) {
-      e.preventDefault();
-      window.location = $(e.currentTarget).attr('href');
-    });
-  });
-</script>
 </body>
 </html>
