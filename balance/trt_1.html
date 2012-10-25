@@ -85,7 +85,7 @@
         <th>Name</th>
       </thead>
       <tbody> 
-        <tr>
+         <tr>
           <td>30</td>
           <td>MZ - 3022104 125mg</td>
         </tr>
@@ -114,12 +114,12 @@
           <td>Placebo 375mg</td>
         </tr>
         <tr>
-          <td>30</td>
+          <td> 30</td>
           <td>Placebo 500mg</td>
         </tr>
         </tbody> 
     </table>
-      <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Arm</button>
+      <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Article Type</button>
       <br/><br/>
 
     <h4>Treatment Compositions</h4>
@@ -144,17 +144,22 @@
         <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Dosing Factor</button>
   </div>
 
-<div class="span6 pull-right">
-  <h3><label class="checkbox">
-    <input type="checkbox">Titration</label></h3>
+<div class="span6 pull-right titration-col">
+    <div class="titration-header"
+    <label class="checkbox">
+      <input id="toggleElement" type="checkbox">&nbsp;Titration</input>
+    </label>
+  </div>
+
+  <div class="titration_form">
 
   <h4>Titration Level Sets</h4>
 
-    <button href="/addls1.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Level Set</button>
+    <button href="add_ls_1.html" id=".btn" class="btn tertiary-btn positive-btn" ><i class="icon-plus icon-positive"></i>Add Level Set</button>
     <br/><br/>
 
-  <h4>Titration Limiting Rules</h4>
-        <table class="table table-bordered table-striped">
+  <h4 >Titration Limiting Rules</h4>
+        <table class="table table-striped" >
       <thead>
         <th></th>
         <th>Name</th>
@@ -162,42 +167,42 @@
       </thead>
       <tbody> 
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>Up</td>
-          <td><input class="input-mini" type="text"></td>
+          <td><input class="input-mini" type="text" disabled></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>Down</td>
-          <td><input class="input-mini" type="text"></td>
+          <td><input class="input-mini" type="text" disabled></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>Hold</td>
           <td></td>
         </tr>
          <tr>
-          <td><input type="checkbox"></td>
-          <td><input class="input-mini" type="text"> Maximum number levels to skip up</td>
+          <td><input type="checkbox" disabled></td>
+          <td><input class="input-mini" type="text" disabled> Maximum number levels to skip up</td>
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
-          <td><input class="input-mini" type="text"> Maximum number levels to skip down</td>
+          <td><input type="checkbox" disabled></td>
+          <td><input class="input-mini" type="text" disabled> Maximum number levels to skip down</td>
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>If a subject has titrated up, do not go back down</td>
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>If a subject has titrated down, do not go back up</td>
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" disabled></td>
           <td>If a level threshold has been reached,           
             <div class="btn-toolbar pull-left">
         <div class="btn-group">
@@ -215,6 +220,7 @@
      
        </tbody> 
     </table>
+   </div> <!-- toggle div -->
 
 
 </section>
@@ -251,6 +257,27 @@
       window.location = $(e.currentTarget).attr('href');
     });
   });
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    //grey out all lines.
+    jQuery(".titration_form").css({opacity:'0.2'});
+    //jQuery(".titration_form input").attr("disabled", 'disabled');
+
+    //add input change handlers
+    jQuery("#toggleElement").on('click',function() {
+        console.log(  );
+        if( !$(this).prop('checked') ) {
+          $(".titration_form").css({opacity:'0.2'});
+          $(".titration_form input").attr("disabled", 'disabled');
+        } else {
+          $(".titration_form").css({opacity:'1.0'});
+          $(".titration_form input").attr("disabled", false);
+        }
+        //enable the next line
+        });
+
+});
 </script>
 </body>
 </html>
