@@ -47,7 +47,7 @@ header, #header {}
 img.logo{
   float: left;
   display: inline-block;
-  margin: 8px 0 8px 8px;
+  margin: 8px 0 0 8px;
 }
 img.customerlogo{
   float: left;
@@ -55,7 +55,7 @@ img.customerlogo{
   margin: 8px 8px 8px 0;
 }
 ul.account-nav {
-  margin: 18px 0 8px 0;
+  margin: 20px 0 0 0;
 }
 
 ul.account-nav li {
@@ -88,6 +88,11 @@ ul.account-nav li .btn-group {
 .search-bar {
   margin: 16px 4px 0 4px;
   width: auto;
+}
+
+/* Typography  */
+h3 {
+	margin: 8px 0;
 }
 
 /* error message */
