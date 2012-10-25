@@ -273,7 +273,7 @@ table {
 thead {
 	background:#ddd;
 	color: #333;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
 }
 .table th, .table td {
     border-top: none;
@@ -587,6 +587,30 @@ color: #333;
 .control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
     color: #333;
 }
+
+.titration-col {
+border: 1px solid #ddd;
+border-radius: 2px;
+margin-top: 16px;
+}
+
+.titration-header {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  background: #ddd;
+}
+
+.titration-col h4 {
+  margin-left: 8px;
+}
+
+section .titration-col table{
+  margin-bottom: 0;
+  border: none;
+
+}
+
 
 /* Modal */
 
