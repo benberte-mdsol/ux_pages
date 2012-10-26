@@ -107,53 +107,39 @@
     <table class="table table-bordered table-striped span8">
       <thead>
         <th><input type="checkbox"></th>
-        <th>Arm
-            <button class="ui-multiselect multispecial" title="Basic example" multiple="multiple" name="example-basic" size="5">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
-              <option value="option5">Option 5</option>
-              <option value="option6">Option 6</option>
-              <option value="option7">Option 7</option>
-              <option value="option8">Option 8</option>
-              <option value="option9">Option 9</option>
-              <option value="option10">Option 10</option>
-              <option value="option11">Option 11</option>
-              <option value="option12">Option 12</option>
-            </button>
+        <th>Arm <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Arm 1</a></li>
+                  <li><a href="">Arm 2</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
         </th>
-        <th>Visit
-          <select class="multispecial" title="Basic example" multiple="multiple" name="example-basic" size="5">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
-              <option value="option5">Option 5</option>
-              <option value="option6">Option 6</option>
-              <option value="option7">Option 7</option>
-              <option value="option8">Option 8</option>
-              <option value="option9">Option 9</option>
-              <option value="option10">Option 10</option>
-              <option value="option11">Option 11</option>
-              <option value="option12">Option 12</option>
-            </select>
+        <th>Visit <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Visit 1</a></li>
+                  <li><a href="#">Visit 2</a></li>
+                  <li><a href="#">Visit 3</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
         </th>
-        <th>Treatment Compositions
-          <select class="multispecial" title="Basic example" multiple="multiple" name="example-basic" size="5">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
-              <option value="option5">Option 5</option>
-              <option value="option6">Option 6</option>
-              <option value="option7">Option 7</option>
-              <option value="option8">Option 8</option>
-              <option value="option9">Option 9</option>
-              <option value="option10">Option 10</option>
-              <option value="option11">Option 11</option>
-              <option value="option12">Option 12</option>
-            </select>
+        <th>Treatment Compositions <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Low</a></li>
+                  <li><a href="#">Do Not Dose</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
         </th>
       </thead>
       <tbody>
@@ -260,16 +246,6 @@
 <script src="javascripts/jquery-ui.custom.js"></script> 
 <script src="javascripts/jquery.multiselect.js"></script> 
 <script src="javascripts/application.js"></script>
-<script type="text/javascripts">
-  $('.multispecial').multiselect().multiselectfilter({label: ''});
-</script>
-<script type="text/javascript">
-  $(function() {
-    $('.btn').on('click', function(e) {
-      e.preventDefault();
-      window.location = $(e.currentTarget).attr('href');
-    });
-  });
-</script>
+
 </body>
 </html>
