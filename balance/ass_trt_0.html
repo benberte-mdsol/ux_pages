@@ -18,8 +18,6 @@
 <link rel="stylesheet" href="stylesheets/bootstrap.css">
 
 <link rel="stylesheet" href="stylesheets/application.css">
-<link rel="stylesheet" href="stylesheets/jquery.multiselect.css">
-<link rel="stylesheet" href="stylesheets/jquery-ui-1.9.0.custom">
 
 <link rel="stylesheet" href="stylesheets/buttons.css">
 
@@ -106,7 +104,7 @@
 
     <table class="table table-bordered table-striped span8">
       <thead>
-        <th><input type="checkbox"></th>
+        <th><input type="checkbox" id="check_all"></th>
         <th>Arm <br>
           <div class="btn-toolbar pull-left">
               <div class="btn-group">
@@ -265,6 +263,13 @@
 <script src="javascripts/jquery-ui.custom.js"></script> 
 <script src="javascripts/jquery.multiselect.js"></script> 
 <script src="javascripts/application.js"></script>
-
+<script type="text/javascript">
+  $(function() {
+    $('#check_all').on('click', function(e) {
+      var checks = $(this).parents('table').find('tbody input[type="checkbox"]');
+      checks.click();
+    });
+  });
+</script>
 </body>
 </html>
