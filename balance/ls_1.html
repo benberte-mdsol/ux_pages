@@ -56,7 +56,7 @@
 </nav>
 
  <div class="alert alert-success">
-  <img src="../images/i_success.gif" alt="Success">
+  <img src="./images/i_success.gif" alt="Success">
     <strong>Success!</strong> "Level Set 1" has successfully been added as a Level Set to the treatment design.
 </div>
 
@@ -77,7 +77,7 @@
 
 <section class="span12" style="padding: 10px; border: 1px solid #ccc;">
 
-  <div class="span6 pull-left" style="padding-right:10px; border-right:1px solid #ddd;">
+  <div class="span6 pull-left" style="padding-right:10px;">
     <h4>Article Type</h4>
     <table class="table table-bordered table-striped">
       <thead>
@@ -171,32 +171,36 @@
     <h4>Dosing Factors</h4>
         <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Dosing Factor</button>
   </div>
+  
+<div class="span6 pull-right titration-col">
+    <div class="titration-header"
+    <label class="checkbox">
+      <input id="toggleElement" type="checkbox" checked>&nbsp;Titration</input>
+    </label>
+  </div>
 
-<div class="span6 pull-right">
-  <h3><label class="checkbox">
-    <input type="checkbox">Titration</label></h3>
+  <div class="titration_form">
 
   <h4>Titration Level Sets</h4>
+    <table class="table table-bordered table-striped" style="border-bottom: 1px solid #ddd;">
+          <thead>
+            <th>Name</th>
+            <th>Arm</th>
+            <th>Level Set</th>
+          </thead>
+          <tbody> 
+            <tr>
+              <td>Level Set 1</td>
+              <td>All Arms</td>
+              <td>125mg, 250mg, 375mg, 500mg
+            </tr>
+      </table>
 
-  <table class="table table-bordered table-striped">
-      <thead>
-        <th>Name</th>
-        <th>Arm</th>
-        <th>Level Set</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td>Level Set 1</td>
-          <td>All Arms</td>
-          <td>125mg, 250mg, 375mg, 500mg
-        </tr>
-  </table>
-
-    <button href="/addls1.html" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Level Set</button>
+    <button href="add_ls_1.html" id=".btn" class="btn tertiary-btn positive-btn" ><i class="icon-plus icon-positive"></i>Add Level Set</button>
     <br/><br/>
 
-  <h4>Titration Limiting Rules</h4>
-        <table class="table table-bordered table-striped">
+  <h4 >Titration Limiting Rules</h4>
+        <table class="table table-striped" >
       <thead>
         <th></th>
         <th>Name</th>
@@ -204,7 +208,7 @@
       </thead>
       <tbody> 
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox" ></td>
           <td>Up</td>
           <td><input class="input-mini" type="text"></td>
         </tr>
@@ -257,6 +261,7 @@
      
        </tbody> 
     </table>
+   </div> <!-- toggle div -->
 
 
 </section>
