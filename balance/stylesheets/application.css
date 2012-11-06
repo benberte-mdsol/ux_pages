@@ -595,6 +595,8 @@ color: #333;
 
 .input-mini {
   width: 20px;
+  height: 16px !important;
+  padding: 2px;
 }
 .control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
     color: #333;
@@ -610,6 +612,9 @@ border-radius: 2px;
   font-weight: bold;
   padding: 8px;
   background: #ddd;
+}
+.titration-header label{
+  font-weight: bold;
 }
 
 .titration-col h4 {
