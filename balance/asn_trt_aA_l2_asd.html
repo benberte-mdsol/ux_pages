@@ -81,22 +81,36 @@
 
     <h6>Filter a set of rules, then select them.</h6>
 
-    <!-- Fatheader goes here -->
-<div class="fatheader">
-      <a href="#" class="span2 selected">
-        All Rules
-        <h3>8</h3>
-      </a>
-        <a href="#" class="span2">
-        Unassigned Rules
-        <h3>6</h3>
-      </a>
-      <a href="#"class="span2">
-        Assigned Rules
-        <h3>2</h3>
-      </a>
-</div> 
+<!-- Fatheader goes here -->
+<div class="tabbable">
+    <ul id ="myTab" class="nav fatheader">
+      <li class="span2 active">
+        <a href="#tab1" data-toggle="tab">
+          All Rules
+          <h3>8</h3>
+        </a> 
+      </li>
+      <li class="span2">
+        <a href="#tab2" data-toggle="tab">
+          Unassigned Rules
+          <h3>6</h3>
+        </a> 
+      </li>
+      <li  class="span2">
+        <a href="#tab3" data-toggle="tab">
+          Assigned Rules
+          <h3>2</h3>
+        </a> 
+      </li>
+    </ul>
+
+
 <div class="clearfix"></div>
+  
+ <div class="tab-content">  
+
+<div class="tab-pane active" id="tab1">
+
 <div class="results">
   <p class="pull-left">0 Selected</p>
   <p class="pull-right">1 Rule</p>
@@ -159,6 +173,171 @@
       </tbody>
     </table>
   </div>
+
+  <div class="tab-pane" id="tab2">
+
+<div class="results">
+  <p class="pull-left">0 Selected</p>
+  <p class="pull-right">6 Rule</p>
+</div>
+
+    <table class="table table-bordered table-striped span8">
+      <thead>
+        <th><input type="checkbox" id="check_all"></th>
+        <th>Arm <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_aA_l0.html">Active</a></li>
+                  <li><a href="asn_trt_aP_l2.html">Placebo</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+        <th>Level<br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_aA_l1.html">Level 1</a></li>
+                  <li><a href="asn_trt_aA_l2.html">Level 2</a></li>
+                  <li><a href="asn_trt_aA_l3.html">Level 3</a></li>
+                  <li><a href="asn_trt_aA_l4.html">Level 4</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+        <th>Treatment Compositions <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">None Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_T_A-L1.html">Active - Level 1</a></li>
+                  <li><a href="asn_trt_T_A-L2.html">Active - Level 2</a></li>
+                  <li><a href="asn_trt_T_A-L3.html">Active - Level 3</a></li>
+                  <li><a href="asn_trt_T_A-L4.html">Active - Level 4</a></li>
+                  <li><a href="asn_trt_T_P-L1.html">Placebo - Level 1</a></li>
+                  <li><a href="asn_trt_T_P-L2.html">Placebo - Level 2</a></li>
+                  <li><a href="asn_trt_T_P-L3.html">Placebo - Level 3</a></li>
+                  <li><a href="asn_trt_T_P-L4.html">Placebo - Level 4</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Active</td>
+          <td>Level 3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Active</td>
+          <td>Level 4</td>
+          <td></td>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Placebo</td>
+          <td>Level 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Placebo</td>
+          <td>Level 2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Placebo</td>
+          <td>Level 3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Placebo</td>
+          <td>Level 4</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tab-pane" id="tab3">
+
+<div class="results">
+  <p class="pull-left">0 Selected</p>
+  <p class="pull-right">2 Rule</p>
+</div>
+
+    <table class="table table-bordered table-striped span8">
+      <thead>
+        <th><input type="checkbox" id="check_all"></th>
+        <th>Arm <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_aA_l0.html">Active</a></li>
+                  <li><a href="asn_trt_aP_l2.html">Placebo</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+        <th>Level<br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">All Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_aA_l1.html">Level 1</a></li>
+                  <li><a href="asn_trt_aA_l2.html">Level 2</a></li>
+                  <li><a href="asn_trt_aA_l3.html">Level 3</a></li>
+                  <li><a href="asn_trt_aA_l4.html">Level 4</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+        <th>Treatment Compositions <br>
+          <div class="btn-toolbar pull-left">
+              <div class="btn-group">
+              <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">None Selected<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="asn_trt_T_A-L1.html">Active - Level 1</a></li>
+                  <li><a href="asn_trt_T_A-L2.html">Active - Level 2</a></li>
+                  <li><a href="asn_trt_T_A-L3.html">Active - Level 3</a></li>
+                  <li><a href="asn_trt_T_A-L4.html">Active - Level 4</a></li>
+                  <li><a href="asn_trt_T_P-L1.html">Placebo - Level 1</a></li>
+                  <li><a href="asn_trt_T_P-L2.html">Placebo - Level 2</a></li>
+                  <li><a href="asn_trt_T_P-L3.html">Placebo - Level 3</a></li>
+                  <li><a href="asn_trt_T_P-L4.html">Placebo - Level 4</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/link.gif"></td>
+          <td>Active</td>
+          <td>Level 1</td>
+          <td>Active - Level 1</td>
+        </tr>
+        <tr>
+          <td><img src="images/link.gif"></td>
+          <td>Active</td>
+          <td>Level 2</td>
+          <td>Active - Level 2</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</div>
 
 
 <div class="span4 pull-right">
