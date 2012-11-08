@@ -714,10 +714,16 @@ ul.presentation-nav li{
 }
 
 
+.b-header .btn {
+margin-top: 8px;
+
+}
+
+
 
 .action-row{
   text-align: center;
-  padding: 8px;
+  padding: 8px 12px 8px 8px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;

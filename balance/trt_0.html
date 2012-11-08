@@ -60,12 +60,11 @@
 <div class="container">
 
   <ul class="nav nav-tabs" id="myTab">
-        <li><a href="index.html">Randomization Design</a></li>
-
-        <li class="active"><a href="#treatment_design" data-toggle="tab">Treatment Design</a></li>
-        <li><a href="#settings" data-toggle="tab">Visits</a></li>
-        <li><a href="#settings" data-toggle="tab">Assign Treatments</a></li>
-        <li class="pull-right"><a href="#message" data-toggle="tab">Simulations</a></li>
+    <li><a href="#">Randomization Design</a></li>
+    <li class="active"><a href="trt_0.html">Treatment Design</a></li>
+    <li><a href="vst_0.html">Visits</a></li>
+    <li><a href="asn_trt_0.html">Assign Treatments</a></li>
+    <li class="pull-right"><a href="#">Simulations</a></li>
   </ul>
 
   <div class="span12 b-header" id="treatment_design">
@@ -74,11 +73,11 @@
 
 <section class="span12" style="padding: 10px; border: 1px solid #ccc;">
 
-  <div class="span6 pull-left" style="padding-right:10px; ">
+  <div class="span6 pull-left" style=" padding-right:10px; ">
     <h4>Article Type</h4>
      <table class="table table-bordered table-striped">
       <thead>
-        <th>Min Days Between <br>Dispensing and Expiration</th>
+        <th class="span3">Min Days Between <br>Dispensing and Expiration</th>
         <th>Name</th>
       </thead>
       <tbody> 
@@ -127,78 +126,17 @@
         <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Dosing Factor</button>
   </div>
 
-<div class="span6 pull-right">
-    <h4>Titration</h4>
-    <div class="titration-header">
-    <label class="checkbox">
-      <input id="toggleElement" type="checkbox">&nbsp; Activate Titration</input>
-    </label>
-  </div>
+<div class="span6 pull-right titration-col">
+  <h4>Conditional Titration</h4>
+<br>
 
-  <div class="titration_form  titration-col">
-
-    <h4>Level Sets</h4>
-
-    <button href="add_ls_1.html" id=".btn" class="btn tertiary-btn positive-btn" ><i class="icon-plus icon-positive"></i>Add Level Set</button>
-    <br/><br/>
-
-      <h4 >Limiting Rules</h4>
-      <table class="table table-striped">
-      <thead>
-        <th></th>
-        <th>Name</th>
-      </thead>
-      <tbody> 
-        <tr>
-          <td><input type="checkbox" disabled></td>
-          <td>Dissallow down titration after <input class="input-mini" type="text" disabled> unscheduled up titrations</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" disabled></td>
-         <td>Dissallow up titration after <input class="input-mini" type="text" disabled> unscheduled down titrations</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" disabled></td>
-          <td>Dissallow titration after <input class="input-mini" type="text" disabled> unscheduled up or down titrations</td>
-        </tr>
-         <tr>
-          <td><input type="checkbox" disabled></td>
-          <td> Maintain acts as unscheduled up or down titration</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            Enforce single-step titrations
-            <label class="radio inline">
-              Yes
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            </label>
-
-            <label class="radio inline ">
-              No
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            </label>
-          </td>
-        </tr>
-         <tr>
-          <td></td>
-          <td>
-            If level threshold has been reached
-            <label class="radio inline">
-              Maintain
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            </label>
-
-            <label class="radio inline ">
-              Error
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            </label>
-          </td>
-        </tr>
-     
-       </tbody> 
-    </table>
-   </div> <!-- toggle div -->
+  <h5 class="zero-case">Conditional Titration is not yet being used in this design.<br><br>
+  <button href="#" class="btn secondary-btn positive-btn" ><i class="icon-plus icon-positive"></i>Activate Titration</button>
+  </h5>    
+  <br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
+</div> <!-- toggle div -->
 
 </section>
 </br>
