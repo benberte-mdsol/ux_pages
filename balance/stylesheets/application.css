@@ -400,6 +400,10 @@ td.action-btn {
   width: 80px;
 }
 
+.tab-pane{
+  height: 400px;
+}
+
 /* Visits */
 
 table.visit-table {
