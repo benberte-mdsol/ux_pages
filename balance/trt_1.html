@@ -144,78 +144,73 @@
         <button href="#" id=".btn" class="btn tertiary-btn positive-btn"><i class="icon-plus icon-positive"></i>Add Dosing Factor</button>
   </div>
 
-<div class="span6 pull-right titration-col">
-    <div class="titration-header"
+<div class="span6 pull-right">
+    <h4>Titration</h4>
+    <div class="titration-header">
     <label class="checkbox">
-      <input id="toggleElement" type="checkbox">&nbsp;Titration</input>
+      <input id="toggleElement" type="checkbox">&nbsp; Activate Titration</input>
     </label>
   </div>
 
-  <div class="titration_form">
+  <div class="titration_form  titration-col">
 
-  <h4>Titration Level Sets</h4>
+    <h4>Level Sets</h4>
 
     <button href="add_ls_1.html" id=".btn" class="btn tertiary-btn positive-btn" ><i class="icon-plus icon-positive"></i>Add Level Set</button>
     <br/><br/>
 
-  <h4 >Titration Limiting Rules</h4>
-        <table class="table table-striped" >
+      <h4 >Limiting Rules</h4>
+      <table class="table table-striped">
       <thead>
         <th></th>
         <th>Name</th>
-        <th>Times Allowed</th>
       </thead>
       <tbody> 
         <tr>
           <td><input type="checkbox" disabled></td>
-          <td>Up</td>
-          <td><input class="input-mini" type="text" disabled></td>
+          <td>Dissallow down titration after <input class="input-mini" type="text" disabled> unscheduled up titrations</td>
         </tr>
         <tr>
           <td><input type="checkbox" disabled></td>
-          <td>Down</td>
-          <td><input class="input-mini" type="text" disabled></td>
+         <td>Dissallow up titration after <input class="input-mini" type="text" disabled> unscheduled down titrations</td>
         </tr>
         <tr>
           <td><input type="checkbox" disabled></td>
-          <td>Hold</td>
-          <td></td>
+          <td>Dissallow titration after <input class="input-mini" type="text" disabled> unscheduled up or down titrations</td>
         </tr>
          <tr>
           <td><input type="checkbox" disabled></td>
-          <td><input class="input-mini" type="text" disabled> Maximum number levels to skip up</td>
-          <td></td>
+          <td> Maintain acts as unscheduled up or down titration</td>
         </tr>
         <tr>
-          <td><input type="checkbox" disabled></td>
-          <td><input class="input-mini" type="text" disabled> Maximum number levels to skip down</td>
           <td></td>
+          <td>
+            Enforce single-step titrations
+            <label class="radio inline">
+              Yes
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            </label>
+
+            <label class="radio inline ">
+              No
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            </label>
+          </td>
         </tr>
-        <tr>
-          <td><input type="checkbox" disabled></td>
-          <td>If a subject has titrated up, do not go back down</td>
+         <tr>
           <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" disabled></td>
-          <td>If a subject has titrated down, do not go back up</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" disabled></td>
-          <td>If a level threshold has been reached,           
-            <div class="btn-toolbar pull-left">
-        <div class="btn-group">
-          <button data-toggle="dropdown" class="btn secondary-btn dropdown-toggle">Maintain Level, Show Warning<span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Maintain Level, Show Warning</a></li>
-            <li><a href="#">Maintain Level Silently</a></li>
-            <li><a href="#">Show Warning, Do Not Dispense</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div>
-    </td>
-          <td></td>
+          <td>
+            If level threshold has been reached
+            <label class="radio inline">
+              Maintain
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            </label>
+
+            <label class="radio inline ">
+              Error
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            </label>
+          </td>
         </tr>
      
        </tbody> 
