@@ -21,6 +21,10 @@
 
 <link rel="stylesheet" href="stylesheets/buttons.css">
 
+<!-- Local Page Style -->
+
+<link rel="stylesheet" href="stylesheets/edc_form.css">
+
 <!-- NO OTHER JAVSCRIPT IN THE HEAD -->
 <script src="js/modernizr.js"></script>
 </head>
@@ -74,10 +78,10 @@
 <div class="container">
 
 
-<table class="table table-condensed pull-left">
+<table class="table table-condensed pull-left paddingright">
   <tbody >
     <tr>
-      <td class="span2"  style="border-top: none;"><i class="icon-user"></i><strong>SCR001</strong></td>
+      <td class="span2"  style="border-top: none;"><img style="padding:0 4px 12px;" src="images/glyphicons_003_user.png"><strong style="font-size: 22px;">SCR001</strong></td>
       <td class="span2" style="border-top: none;"><div class="btn-group pull-left">
           <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
           <i class="icon-cog"></i>Add Event<span class="caret"></span>
@@ -91,9 +95,9 @@
       <td class="pull-right" style="border-top: none;"><a href="#">Linked to ConMeds</a></td>
     </tr>
     <tr>
-      <td style="border-top: none;">Status <strong>In Treatment</strong></td>
-      <td style="border-top: none;">Gender <strong>Female</strong></td>
-      <td style="border-top: none;">Age <strong>62</strong></td>
+      <td style="border-top: none; white-space: nowrap; padding-right:32px;">Status <strong>In Treatment</strong></td>
+      <td style="border-top: none;padding-right:32px;">Gender <strong>Female</strong></td>
+      <td style="border-top: none;padding-right:32px;">Age <strong>62</strong></td>
     </tr>
     
   </tbody>
@@ -170,7 +174,15 @@
 
 
   <tr>
-      <td colspan="2"><i class="icon-check icon-positive"></i><strong style="color:#666;">Subject ID</strong> <br> <h3>SCR0</h3></td>
+      <td colspan="2"><i class="icon-check icon-positive"></i><strong style="color:#666;">Subject ID</strong> <br> <h3>SCR0</h3>
+      
+      <!----  comment area start ------>
+      
+      <div style="background:red; border:1px solid pink;margin:0 0 0 16px;">comment area here
+      </div>
+      
+      <!----  comment area start ------>      
+      </td>
       <td><i class="icon-edit pull-right"></i></td>
       <td>
         <div class="btn-group pull-right">
@@ -215,9 +227,9 @@
    <tfoot>
         <tr>
        <td  class="center-buttons" colspan="6">
-       <button data-toggle="modal" href="#myModal" class="positive-btn"><i class="icon-ok icon-positive"></i>Save</button>
-       <button class="positive-btn"><i class="icon-ok icon-positive"></i>Save and Next</button>
-       <button class="negative-btn"><i class="icon-remove icon-negative"></i>Cancel</button>
+       <button data-toggle="modal" href="#myModal" class="btn positive-btn"><i class="icon-ok icon-positive"></i>Save</button>
+       <button class="btn positive-btn"><i class="icon-ok icon-positive"></i>Save and Next</button>
+       <button class="btn negative-btn"><i class="icon-remove icon-negative"></i>Cancel</button>
        </td> 
      </tr>
     </tfoot>    

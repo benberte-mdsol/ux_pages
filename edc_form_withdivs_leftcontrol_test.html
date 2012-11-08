@@ -1,0 +1,301 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Peter Parker - User Profile</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- STYLESHEETS HERE -->
+<link rel="stylesheet" href="stylesheets/bootstrap.css">
+
+<link rel="stylesheet" href="stylesheets/application.css">
+
+<link rel="stylesheet" href="stylesheets/buttons.css">
+
+<!-- Local Page Style -->
+
+<link rel="stylesheet" href="stylesheets/edc_form.css">
+
+<!-- NO OTHER JAVSCRIPT IN THE HEAD -->
+<script src="js/modernizr.js"></script>
+</head>
+<body>
+<!-- SITE CONTENT -->
+
+<header class="header">
+  <img class="logo" src="images/logo.png">
+
+    <ul class="pull-right account-nav">
+    <li class="pull-left">Role</li>
+      <li>
+          <div class="btn-toolbar pull-left">
+        <div class="btn-group">
+        	Role
+          <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">Clinical Quality Management<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+      </div>
+    </li>
+      <li><a href=""><i class="icon-user"></i>Peter Parker</a></li>
+      <li><a href=""><i class="icon-question-sign icon-positive"></i>Help</a></li>
+      <li><a href="">Log Out</a></li>
+    </ul>
+</header>
+
+<nav id="navigation_bar">
+  <ul class="clearfix">
+    <li class="first">
+    <a href="/"><img alt="Home" src="images/home.png"/></a>
+    </li>
+    <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Mediflex</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Test Site</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">SCROO1</a></li>
+      <li class="rich_crumb breadcrumb-container triad" id="apps">
+      <a href="#" id="apps_menufirst" class="nav_drop_down"="">Primary</a></li>
+
+  </ul>
+</nav>
+
+
+<div class="container">
+
+	<div id="edc_header_row" class="clearfix">
+    	<div style="float:right; font-size:90%;"><a href="#"><i class="icon-cog"></i>Link to ConMeds</a>
+        </div>
+        <div style="float:right;padding:0 24px; font-size:90%;"><a href="#"><i class="icon-cog"></i>and another link</a>
+        </div>
+
+				<div style="float:left;padding:0; margin:0; line-height:0px;"> 
+    		<h3 style="line-height:13px; padding:0px;">
+       		<!--
+            <img style="vertical-align: inherit;padding: 0 4px 0 0;" src="images/glyphicons_003_user.png" width="23" height="22">
+            -->
+			<img style="vertical-align: inherit;padding: 0 4px 0 0;" src="images/subj_nc.gif">SCR001</h3>
+        </div> 
+    	<div style="float:right; margin:0 32px 0px 0; text-align:right;color:#666;" class="span4">Randomized <span style="padding:0 16px;">Female</span>39
+        </div>
+	</div>
+
+
+	<div id="edc_form_header_row" class="clearfix span12" style="background:#999; padding:8px;border-bottom:1px dotted #DDD;">
+		<div style="float:left;" class="span8"></div>
+		<div style="float:left;" class="span3">
+        
+        
+              <div class="action-btn btn-group">
+    	    						<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        							<i class="icon-cog"></i>Actions<span class="caret"></span></button>
+            						<ul class="dropdown-menu">
+ 	    	       						<li><a href="">CSV</a></li>
+    	        						<li><a href="">Excel</a></li>
+            							<li><a href="">PDF</a></li>
+            						</ul>
+            	
+   									<div id="edc_form_header_controls">
+										<ul>
+            								<li><i class="icon-file icon-white" style="margin:0 0 0 8px"></i></li>
+            								<li><i class="icon-eye-open icon-white" style="margin:0 0 0 8px"></i></li>
+            								<li><i class="icon-cog icon-white" style="margin:0 0 0 8px"></i></li>
+            							</ul>
+										<div class="clearfix"></div>
+
+										<ul>
+        				    				<li><input style="margin:0 0 0 8px;" type="checkbox" checked/></li>
+            								<li><input style="margin:0 0 0 8px;" type="checkbox"/></li>
+            								<li><input style="margin:0 0 0 8px;" type="checkbox"/></li>
+            								<li><i class="icon-pencil-edc icon-white"></i></li>
+            							</ul>
+                					</div>
+                    			</div>
+        </div>       
+	</div>
+
+
+	<div class="edc_row span12">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+			<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+		<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        	<img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">This layout is optimized for review and verification</span>
+        </div>
+	</div>
+
+
+	<div class="edc_row span12">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+			<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+		<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">Yes</span><br>
+		<i class="icon-comment" style="margin:0 0 6px -20px"></i>
+            <span class="ecrfData">This is s a comment</span>
+        </div>
+	</div>
+    
+	<div class="edc_row span12">
+		<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+			<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+           	  <ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+			<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">Praesent laoreet dui et tellus blandit posuere.</span>
+        </div>
+	</div>
+    
+    
+
+	<div class="edc_row span12" style="background:pink;">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+			<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+		<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_nc.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">Yes</span>
+        </div>
+	</div>
+    
+    
+
+	<div class="edc_row span12">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+			<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+			<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span> - need audit indicator -<br />
+			<span class="ecrfData">09 Feb 1989</span>
+        </div>
+	</div>
+    
+    
+	<div class="edc_row span12">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+					<div class="action-btn btn-group">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil"></i></button>
+        	</div>
+		</div>       
+			<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">Long data input here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at ipsum iaculis turpis aliquet fermentum. Ut ligula magna, tristique sed sodales vitae, venenatis eu nisl. Aenean vel risus lectus. Vestibulum eget enim metus. Nam vel leo in nunc hendrerit tincidunt a vitae erat. Praesent laoreet dui et tellus blandit posuere. Integer luctus pulvinar posuere. Etiam quis tellus risus, sed suscipit mauris. </span>
+        </div>
+	</div>
+    
+    
+	<div class="edc_row span12">
+			<div style="float:left;margin:8px 0 0 0; padding:0 8px 0 0" class="span3">
+					<div class="action-btn btn-group btn-toolbar">
+    	    	<button data-toggle="dropdown" class="btn btn-mini dropdown-toggle">
+        		<i class="icon-cog"></i>Actions<span class="caret"></span>
+          		</button>
+            	<ul class="dropdown-menu">
+            		<li><a href="">CSV</a></li>
+            		<li><a href="">Excel</a></li>
+            		<li><a href="">PDF</a></li>
+            	</ul>
+                <input style="margin:0 0 0 8px;" type="checkbox" checked/><input style="margin:0 0 0 8px;" type="checkbox"/><input style="margin:0 8px 0 8px;" type="checkbox"/><button class="btn positive-btn tertiary-btn"><i class="icon-pencil icon-green"></i></button>
+        	</div>
+		</div>       
+			<div class="holder span8" style="float:left; padding:0 0 0 36px;">
+        <img style="margin:0 0 6px -20px;" src="images/dp_ok.gif" width="16px" heigh="16px">
+			<span class="ecrfLabel">label</span><br />
+			<span class="ecrfData">Data value here typed in and not editable</span>
+        </div>
+	</div>
+    
+	<div class="center-buttons span12">
+       <div style="width:500px; margin:16px auto; text-align:center;">
+       	 <button data-toggle="modal" href="#myModal" class="btn positive-btn"><i class="icon-ok icon-positive"></i>Save</button>
+      	 <button class="btn positive-btn"><i class="icon-ok icon-positive"></i>Save and Next</button>
+      	 <button class="btn negative-btn"><i class="icon-remove icon-negative"></i>Cancel</button>
+       </div> 
+	</div>
+ 
+
+<div style="padding:100px" class="clearfix" span12></div>Audit, e-Sig, reports, generated date
+    
+</div>
+</body>
+</html>
