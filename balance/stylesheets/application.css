@@ -407,8 +407,14 @@ td.action-btn {
 /* Visits */
 
 table.visit-table {
-  background: #e4e4e4;
   border: 1px solid #CDCDCD;
+  width: 940px;
+  overflow: auto;
+  display: block;
+}
+
+table.visit-table tr.btn-toolbar {
+  z-index: 200;
 
 }
 
